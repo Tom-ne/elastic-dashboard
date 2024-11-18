@@ -1470,6 +1470,28 @@ class _DashboardPageState extends State<DashboardPage> with WindowListener {
                     Text('Save As'),
                   ],
                 )),
+
+            // Save on robot
+            MenuItemButton(
+              style: menuButtonStyle,
+              onPressed: () {
+                // TODO: implement this
+                // step 1: check if connected to network tables
+                // step 2: check if the specific port for the connection is open on RIO (will need to add implementation on RIO)
+                // step 3: create socket on the computer
+                // step 4: transfer the file
+              },
+              child: const Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.upload_file),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text('Save to robot'),
+                ],
+              ),
+            )
           ],
           child: const Text(
             'File',
